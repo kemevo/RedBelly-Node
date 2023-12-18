@@ -1,6 +1,6 @@
 # Telegram
 - https://t.me/HerculesNode
-# Redbelly node kurulumu
+# Redbelly node kurulumu (sadece mail gelenler kurabiliyor)
 ## Sistem gereksinimleri (Rehberde belirtilen gereksinimler ama bence fazla yazmışlar)
  - Ubuntu 22.04+
  - 16 GB RAM
