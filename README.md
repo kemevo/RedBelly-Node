@@ -42,10 +42,10 @@ sudo chown -R $USER:$USER /etc/letsencrypt/
 Node Url : ornek.xyz
 Public address : ödüllerin geleceği adres (alttaki ile farklı olmalı)
 Signing address : imzacı adres
-Node RPC HTTP port : (recommended 8545, same as configured in Firewall)
-Node RPC WS port : (recommended 8546, same as configured in Firewall)
-Node consensus port : (recommended 1888, same as configured in Firewall)
-Node recovery port :(recommended 1111, same as configured in Firewall)
+Node RPC HTTP port : 8545
+Node RPC WS port : 8546
+Node consensus port : 1888
+Node recovery port : 1111
 Discord handle : discord handle
 ```
 > Bu işlemden sonra mail gelmesini bekliyorsunuz. Mail geldikten sonra aşağıdaki işlemleri yapıyorsunuz.
