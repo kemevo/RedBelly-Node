@@ -55,9 +55,9 @@ Discord handle : discord handle
 nano config.yaml
 ```
 ### Değişecek kısımlar:
-### ip : ornek.xyz ya da redbelly.ornek.xyz nasıl ayarladıysanız
-### id : formu doldurduktan sonra mail olarak gönderilecek.
-### privateKeyHex : formda singing adres olarak verdiğiniz cüzdanın private keyi
+- ### ip : ornek.xyz ya da redbelly.ornek.xyz nasıl ayarladıysanız
+- ### id : formu doldurduktan sonra mail olarak gönderilecek.
+- ### privateKeyHex : formda singing adres olarak verdiğiniz cüzdanın private keyi
 
 ## Node başlatma
 ### Observe.sh oluşturma
@@ -107,6 +107,7 @@ nohup ./observe.sh > ./logs/rbbcLogs 2>&1 &
 ```
 chmod +x observe.sh
 chmod +x start-rbn.sh
+./start-rbn.sh
 ```
 ## Loglar
 ```
