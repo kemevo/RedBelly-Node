@@ -89,10 +89,10 @@ rm -f log
 ```
 ### Start-rbn.sh oluşturma
 ```
-touch observe.sh
-vim observe.sh
+touch start-rbn.sh
+vim start-rbn.sh
 ```
-> Aşadağıki metinde ornek.xyz yazan yerleri kendinize uygun olacak şekilde doldurun. ve kopyalayıp, oberserve.sh için yapıştırın :wq enter ile kaydedip çıkın
+> Aşadağıki metni kopyalayıp, start-rbn.sh için yapıştırın :wq enter ile kaydedip çıkın
 ```
 #!/bin/sh
 # filename: start-rbn.sh
