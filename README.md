@@ -114,3 +114,25 @@ chmod +x start-rbn.sh
 tail -f $HOME/logs/rbbcLogs
 ```
 ![image](https://github.com/kemevo/RedBelly-Node/assets/51703004/527ddfae-4812-4184-8079-6ff1d1130ed3)
+
+> Discord faucetten token alabilirsiniz imzacı adrese.
+
+## Kontrol
+> Metamask ağ ekle diyelim.
+- Network name: Redbelly Network
+- New RPC URL: (eg. https://ornek.xyz:8545)
+- Chain ID: 152
+- Currency symbol: RBNT
+- Block explorer URL: https://explorer.devnet.redbelly.network/
+> Ekle diyelim. Sorun çıkmazsa düzgün çalışıyor demektir.
+
+## Senkron durumu
+> Sunucunun bulunduğu blok
+```
+cat $HOME/logs/rbbcLogs | grep "Imported new chain segment" | tail -1 | awk -F 'number":"' '{print $2}' | cut -d '"' -f 1)
+```
+> Ağın bulunduğu blok
+```
+echo $(( 16#$(curl -s https://rbn-gcp-australia-southeast1-a-0-b-v2.devnet.redbelly.network:8545/ -X POST -H "Content-Type: application/json" --data '{"method":"eth_getBlockByNumber","params":["latest",false],"id":1,"jsonrpc":"2.0"}' | jq -r .result.number | sed 's/0x//') ))
+```
+> İkisi eşitse senkron demektir.
