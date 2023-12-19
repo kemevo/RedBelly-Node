@@ -33,8 +33,6 @@ sudo certbot certonly --standalone -d $fqn. --non-interactive --agree-tos -m $em
 sudo chown -R $USER:$USER /etc/letsencrypt/
 ```
 > Komutu girdikten sonra ctrl+a+d ile screen den çıkalım.
-> Burda verdiği host ve value değerlerini namecheap dasboarda girerek, cname record olarak ekleyelim.  5-10 dk sonra "screen -r red" ile screen girip entere basalım. "Successfully received certificate..." içeren bir metin yazacak
-![redbelly2](https://github.com/kemevo/RedBelly-Node/assets/51703004/e4869b37-328e-40b2-898c-2eb1ce78ffde)
 
 ## Node kaydetme
 > [Bu adresten](https://redbelly.atlassian.net/servicedesk/customer/portal/13/group/17/create/86) gerekli bilgileri doldurarak node kaydettiriyoruz
