@@ -129,7 +129,7 @@ tail -f $HOME/logs/rbbcLogs
 ## Senkron durumu
 > Sunucunun bulunduğu blok
 ```
-cat $HOME/logs/rbbcLogs | grep "Imported new chain segment" | tail -1 | awk -F 'number":"' '{print $2}' | cut -d '"' -f 1)
+cat $HOME/logs/rbbcLogs | grep "Imported new chain segment" | tail -1 | awk -F 'number":"' '{print $2}' | cut -d '"' -f 1
 ```
 > Ağın bulunduğu blok
 ```
